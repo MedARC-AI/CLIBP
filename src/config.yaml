@@ -1,0 +1,18 @@
+# Model Config
+model_name: "brain_textfrozen_brainckpt_loss1"
+data_path: "/weka/proj-fmri/shared/mindeyev2_dataset"
+cache_dir: "/weka/proj-fmri/shared/cache"
+batch_size: 128
+wandb_log: True
+ckpt_interval: 10
+ckpt_saving: False
+seed: 0
+
+hidden_dim: 768
+seq_len: 1
+max_lr: 3.0e-5
+num_epochs: 50
+
+num_test_iterations_per_epoch: 30
+use_brain: True
+temperature: 0.006
