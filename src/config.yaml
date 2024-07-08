@@ -1,7 +1,10 @@
 # Model Config
-model_name: "brain_textfrozen_brainckpt_loss1"
-data_path: "/weka/proj-fmri/shared/mindeyev2_dataset"
-cache_dir: "/weka/proj-fmri/shared/cache"
+model_name: "usebrainTrue"
+data_path: "/weka/proj-medarc/shared/mindeyev2_dataset"
+# if you are missing files download them from the following links:
+# https://huggingface.co/datasets/pscotti/mindeyev2
+# https://huggingface.co/datasets/pscotti/naturalscenesdataset
+
 batch_size: 128
 wandb_log: True
 ckpt_interval: 10
@@ -9,10 +12,8 @@ ckpt_saving: False
 seed: 0
 
 hidden_dim: 768
-seq_len: 1
 max_lr: 3.0e-5
-num_epochs: 50
+num_epochs: 25
 
-num_test_iterations_per_epoch: 30
 use_brain: True
 temperature: 0.006
